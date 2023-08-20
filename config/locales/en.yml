@@ -30,4 +30,63 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  static_pages:
+    home:
+      title: "Home"
+      description: <p>
+        This is the home page for the   
+        <a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a>
+        sample application.
+        </p>
+    help:
+      title: "Help"
+      description: <p>
+        Get help on the Ruby on Rails Tutorial at the
+        <a href="http://www.railstutorial.org/help">Rails Tutorial help page</a>.
+        To get help on this sample app, see the
+        <a href="http://www.railstutorial.org/book">Rails Tutorial book</a>.
+        </p>
+  products:
+    index:
+      title: "Products"
+      description: "Products page"
+    show:
+      title: "Product"
+      description: "Product page"
+      editThisProduct: "Edit this product"
+      backToProducts: "Back to products"
+      destroyThisProduct: "Destroy this product"
+    new:
+      title: "New product"
+      description: "New product page"
+    edit:
+      title: "Edit product"
+      description: "Edit product page"
+      showThisProduct: "Show this product"
+      backToProducts: "Back to products"
+    others:
+      show: "Show"
+      edit: "Edit"
+      destroy: "Destroy"
+      new: "New Product"
+      are_you_sure: "Are you sure?"
+      no_products: "No products found"
+    attributes:
+      name: "Name"
+      price: "Price"
+      description: "Description"
+      image_url: "Image url"
+      show: "Show"
+      edit: "Edit"
+      destroy: "Destroy"
+      new: "New Product"
+      are_you_sure: "Are you sure?"
+
+  layouts:
+    home: "Home"
+    help: "Help"
+    products: "Products"
+    login: "Log in"
+
+    
+
