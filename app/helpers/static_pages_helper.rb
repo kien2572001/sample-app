@@ -1,6 +1,6 @@
 module StaticPagesHelper
   def full_title page_title = ""
-    base_title = "Ruby on Rails Tutorial Sample App"
+    base_title = t "static_pages.base_title"
     page_title.empty? ? base_title : "#{page_title} | #{base_title}"
   end
 end

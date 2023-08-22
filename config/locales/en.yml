@@ -30,7 +30,13 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  languages:
+      en: "English"
+      ja: "Japanese"
+      vi: "Vietnamese"
   static_pages:
+    app_name: "Sample App"
+    base_title: "Ruby on Rails Tutorial Sample App"
     home:
       title: "Home"
       description: <p>

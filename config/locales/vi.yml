@@ -1,5 +1,11 @@
 vi:
+  languages:
+    ja: "Tiếng Nhật"
+    vi: "Tiếng Việt"
+    en: "Tiếng Anh"
   static_pages:
+    app_name: "Ứng dụng mẫu"
+    base_title: "Ứng dụng mẫu Ruby on Rails Tutorial"
     home:
       title: "Trang chủ"
       description: <p>
