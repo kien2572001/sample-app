@@ -1,0 +1,8 @@
+validate:
+  email: 
+    length: 
+      maximum: 255
+    format: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i'
+  name: 
+    length: 
+      maximum: 50
