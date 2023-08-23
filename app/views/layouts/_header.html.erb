@@ -1,0 +1,17 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to t('static_pages.app_name'), "#", id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to t("layouts.home"), "#" %></li>
+        <li><%= link_to t("layouts.help"), "#" %></li>
+        <li><%= link_to t("layouts.login"), "#" %></li>
+        <% if I18n.locale == :en %>
+          <l><%= link_to t('languages.vi'), locale: "vi" %></li>
+        <% else %>
+          <li><%= link_to t('languages.en'), locale: "en" %></li>
+        <% end %>
+      </ul>
+    </nav>
+  </div>
+</header>
