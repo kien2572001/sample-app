@@ -1,0 +1,63 @@
+vi:
+  languages:
+    ja: "Tiếng Nhật"
+    vi: "Tiếng Việt"
+    en: "Tiếng Anh"
+  static_pages:
+    app_name: "Ứng dụng mẫu"
+    base_title: "Ứng dụng mẫu Ruby on Rails Tutorial"
+    home:
+      title: "Trang chủ"
+      description: <p>
+        Đây là trang chủ của ứng dụng mẫu
+        <a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a>.
+        </p>
+    help:
+      title: "Trợ giúp"
+      description: <p>
+        Để nhận trợ giúp về Ruby on Rails Tutorial, hãy truy cập trang
+        <a href="http://www.railstutorial.org/help">Trang trợ giúp Rails Tutorial</a>.
+        Để nhận trợ giúp về ứng dụng mẫu này, hãy xem
+        <a href="http://www.railstutorial.org/book">Cuốn sách Rails Tutorial</a>.
+        </p>
+  products:
+    index:
+      title: "Sản phẩm"
+      description: "Trang sản phẩm"
+    show:
+      title: "Sản phẩm"
+      description: "Trang sản phẩm"
+      editThisProduct: "Chỉnh sửa sản phẩm này"
+      backToProducts: "Quay lại danh sách sản phẩm"
+      destroyThisProduct: "Xóa sản phẩm này"
+    new:
+      title: "Thêm sản phẩm mới"
+      description: "Trang thêm sản phẩm mới"
+    edit:
+      title: "Chỉnh sửa sản phẩm"
+      description: "Trang chỉnh sửa sản phẩm"
+      showThisProduct: "Xem sản phẩm này"
+      backToProducts: "Quay lại danh sách sản phẩm"
+    other:
+      show: "Xem"
+      edit: "Chỉnh sửa"
+      destroy: "Xóa"
+      new: "Sản phẩm mới"
+      are_you_sure: "Bạn có chắc không?"
+      no_products: "Không tìm thấy sản phẩm nào"
+    attributes:
+      name: "Tên"
+      price: "Giá"
+      description: "Mô tả"
+      image_url: "Đường dẫn ảnh"
+      show: "Xem"
+      edit: "Chỉnh sửa"
+      destroy: "Xóa"
+      new: "Sản phẩm mới"
+      are_you_sure: "Bạn có chắc không?"
+
+  layouts:
+    home: "Trang chủ"
+    help: "Trợ giúp"
+    products: "Sản phẩm"
+    login: "Đăng nhập"
