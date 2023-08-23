@@ -61,3 +61,20 @@ vi:
     help: "Trợ giúp"
     products: "Sản phẩm"
     login: "Đăng nhập"
+
+  active_record:
+    users:
+      new:
+        signup: "Đăng ký"
+        signup_title: "Đăng ký"
+        create_account: "Tạo tài khoản của tôi"
+        confirmation: "Xác nhận"
+        name: "Tên"
+        email: "Email"
+        password: "Mật khẩu"
+      error_messages:
+        form_contains: "Biểu mẫu chứa"
+      flash:
+        user_not_found: "Không tìm thấy người dùng"
+        user_created_successfully: "Người dùng đã được tạo thành công"
+
