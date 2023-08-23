@@ -75,3 +75,7 @@ en:
         password: "Password"
       error_messages:
         form_contains: "The form contains"
+
+  sessions:
+    create:
+      invalid_email_password_combination: "Invalid email/password combination"
