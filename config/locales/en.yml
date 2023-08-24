@@ -62,6 +62,12 @@ en:
     help: "Help"
     products: "Products"
     login: "Log in"
+    users: "Users"
+    settings: "Settings"
+    logout: "Log out"
+    signup: "Sign up"
+    profile: "Profile"
+    account: "Account"
 
   active_record:
     users:
@@ -78,3 +84,14 @@ en:
       flash:
         user_not_found: "User not found"
         user_created_successfully: "User created successfully"
+
+  sessions:
+    new:
+      title: "Log in"
+      login: "Log in"
+      email: "Email"
+      password: "Password"
+      new_user: "New user?"
+      signup_now: "Sign up now!"
+    flash:
+      invalid_email_password_combination: "Invalid email/password combination"

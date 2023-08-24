@@ -61,6 +61,12 @@ vi:
     help: "Trợ giúp"
     products: "Sản phẩm"
     login: "Đăng nhập"
+    users: "Người dùng"
+    settings: "Cài đặt"
+    logout: "Đăng xuất"
+    signup: "Đăng ký"
+    profile: "Hồ sơ"
+    account: "Tài khoản"
 
   active_record:
     users:
@@ -77,4 +83,15 @@ vi:
       flash:
         user_not_found: "Không tìm thấy người dùng"
         user_created_successfully: "Người dùng đã được tạo thành công"
+
+  sessions:
+    new:
+      title: "Đăng nhập"
+      login: "Đăng nhập"
+      email: "Email"
+      password: "Mật khẩu"
+      new_user: "Người dùng mới?"
+      signup_now: "Đăng ký ngay!"
+    flash:
+      invalid_email_password_combination: "Email/mật khẩu không hợp lệ"
 

@@ -6,3 +6,7 @@ validates:
   name: 
     length: 
       max: 50
+  password:
+    length:
+      min: 6
+      max: 20
