@@ -92,6 +92,7 @@ vi:
       password: "Mật khẩu"
       new_user: "Người dùng mới?"
       signup_now: "Đăng ký ngay!"
+      remember_me_on_this_computer: "Ghi nhớ tài khoản trên máy tính này"
     flash:
       invalid_email_password_combination: "Email/mật khẩu không hợp lệ"
 
