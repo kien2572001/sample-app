@@ -3,9 +3,41 @@ en:
       en: "English"
       ja: "Japanese"
       vi: "Vietnamese"
+  users:
+    new:
+      signup_title: "Sign up"
+      create_account: "Create my account"
+    index:
+      title: "All users"
+      all_users: "All users"
+    edit:
+      edit_user: "Edit user"
+      update_profile: "Update your profile"
+      save_changes: "Save changes"
+      change: "Change"
+    user:
+      delete: "Delete"
+      are_you_sure: "Are you sure?"
+    form:
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      confirmation: "Confirmation"
+    show:
+      user_not_found: "User not found"
+    create:
+      user_created_successfully: "User created successfully"
+    update:
+      user_updated_successfully: "User updated successfully"
+    destroy:
+      user_deleted_successfully: "User deleted successfully"
+      user_deleted_failed: "User deleted failed"
+    common:
+      user_not_found: "User not found"
+      wrong_user: "You are not authorized to edit this user"
+      please_log_in: "Please log in"
+
   static_pages:
-    app_name: "Sample App"
-    base_title: "Ruby on Rails Tutorial Sample App"
     home:
       title: "Home"
       description: <p>
@@ -21,70 +53,11 @@ en:
         To get help on this sample app, see the
         <a href="http://www.railstutorial.org/book">Rails Tutorial book</a>.
         </p>
-  products:
-    index:
-      title: "Products"
-      description: "Products page"
-    show:
-      title: "Product"
-      description: "Product page"
-      editThisProduct: "Edit this product"
-      backToProducts: "Back to products"
-      destroyThisProduct: "Destroy this product"
-    new:
-      title: "New product"
-      description: "New product page"
-    edit:
-      title: "Edit product"
-      description: "Edit product page"
-      showThisProduct: "Show this product"
-      backToProducts: "Back to products"
-    others:
-      show: "Show"
-      edit: "Edit"
-      destroy: "Destroy"
-      new: "New Product"
-      are_you_sure: "Are you sure?"
-      no_products: "No products found"
-    attributes:
-      name: "Name"
-      price: "Price"
-      description: "Description"
-      image_url: "Image url"
-      show: "Show"
-      edit: "Edit"
-      destroy: "Destroy"
-      new: "New Product"
-      are_you_sure: "Are you sure?"
 
-  layouts:
-    home: "Home"
-    help: "Help"
-    products: "Products"
-    login: "Log in"
-    users: "Users"
-    settings: "Settings"
-    logout: "Log out"
-    signup: "Sign up"
-    profile: "Profile"
-    account: "Account"
-
-  active_record:
-    users:
-      new:
-        signup: "Sign up"
-        signup_title: "Sign up"
-        create_account: "Create my account"
-        confirmation: "Confirmation"
-        name: "Name"
-        email: "Email"
-        password: "Password"
-      error_messages:
-        form_contains: "The form contains"
-      flash:
-        user_not_found: "User not found"
-        user_created_successfully: "User created successfully"
-
+  shared:
+    _error_messages:
+      form_contains: "The form contains"
+  
   sessions:
     new:
       title: "Log in"
@@ -94,5 +67,18 @@ en:
       new_user: "New user?"
       signup_now: "Sign up now!"
       remember_me_on_this_computer: "Remember me on this computer"
-    flash:
+    create:
       invalid_email_password_combination: "Invalid email/password combination"
+    
+  layouts:
+    header:
+      home: "Home"
+      help: "Help"
+      products: "Products"
+      login: "Log in"
+      users: "Users"
+      settings: "Settings"
+      logout: "Log out"
+      signup: "Sign up"
+      profile: "Profile"
+      account: "Account"
