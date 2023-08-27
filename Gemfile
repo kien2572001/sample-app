@@ -45,6 +45,7 @@ gem "bootstrap-sass", "~> 3.4.1"
 
 gem "config"
 gem "faker", "2.21.0"
+gem "figaro"
 gem "i18n"
 gem "pagy"
 
@@ -57,7 +58,7 @@ gem "pagy"
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html
   gem "debug", platforms: %i(mri mingw x64_mingw)
-  gem "pry" # Use pry for debugging
+  gem "pry-rails"
   gem "rubocop", "~> 1.26", require: false
   gem "rubocop-checkstyle_formatter", require: false
   gem "rubocop-rails", "~> 2.14.0", require: false

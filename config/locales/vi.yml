@@ -8,6 +8,10 @@ vi:
     new:
       signup_title: "Đăng ký"
       create_account: "Tạo tài khoản"
+      name: "Tên"
+      email: "Email"
+      password: "Mật khẩu"
+      confirmation: "Xác nhận mật khẩu"
     index:
       title: "Tất cả người dùng"
       all_users: "Tất cả người dùng"
@@ -33,6 +37,8 @@ vi:
     destroy:
       user_deleted_successfully: "Người dùng đã được xóa thành công"
       user_deleted_failed: "Xóa người dùng không thành công"
+    create:
+      check_your_email: "Vui lòng kiểm tra email của bạn để kích hoạt tài khoản."
     common:
       user_not_found: "Không tìm thấy người dùng"
       wrong_user: "Bạn không được phép chỉnh sửa người dùng này"
@@ -69,6 +75,7 @@ vi:
       remember_me_on_this_computer: "Ghi nhớ tài khoản trên máy tính này"
     create:
       invalid_email_password_combination: "Email/mật khẩu không hợp lệ"
+      account_not_activated: "Tài khoản chưa được kích hoạt"
 
   layouts:
     header:
@@ -82,3 +89,10 @@ vi:
       signup: "Đăng ký"
       profile: "Hồ sơ"
       account: "Tài khoản"
+
+  user_mailer:
+    account_activation:
+      app_name: "Ứng dụng mẫu"
+      hello: "Xin chào"
+      click_link: "Chào mừng bạn đến với ứng dụng mẫu! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
+      activate: "Kích hoạt tài khoản"

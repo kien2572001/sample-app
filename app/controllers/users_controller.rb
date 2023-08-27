@@ -12,7 +12,7 @@ class UsersController < ApplicationController
     @user = User.find_by id: params[:id]
     return if @user
 
-    flash[:danger] = t("active_record.users.flash.user_not_found")
+    flash[:danger] = t(".user_not_found")
     redirect_to root_path
   end
 
@@ -21,15 +21,13 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new user_params # Not the final implementation!
+    @user = User.new user_params
     if @user.save
-      # Handle a successful save.
-      reset_session
-      log_in @user
-      flash[:success] = t(".user_created_successfully")
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t(".check_your_email")
+      redirect_to root_url
     else
-      render "new"
+      render :new
     end
   end
 
