@@ -44,7 +44,9 @@ gem "bootsnap", require: false
 gem "bootstrap-sass", "~> 3.4.1"
 
 gem "config"
+gem "faker", "2.21.0"
 gem "i18n"
+gem "pagy"
 
 # Use Sass to process CSS
 # gem "sassc-rails"
@@ -55,10 +57,10 @@ gem "i18n"
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html
   gem "debug", platforms: %i(mri mingw x64_mingw)
+  gem "pry" # Use pry for debugging
   gem "rubocop", "~> 1.26", require: false
   gem "rubocop-checkstyle_formatter", require: false
   gem "rubocop-rails", "~> 2.14.0", require: false
-  gem "pry" # Use pry for debugging
 end
 
 group :development do

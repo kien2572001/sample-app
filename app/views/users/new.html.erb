@@ -1,22 +1,10 @@
-<%= provide :title, t("active_record.users.new.signup_title") %>
-<h1><%= t("active_record.users.new.signup_title") %></h1>
+<%= provide :title, t(".signup_title") %>
+<h1><%= t(".signup_title") %></h1>
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-    <%= form_for @user, url: signup_path do |f| %>
-      <%= render "shared/error_messages" %>
-      <%= f.label :name , t("active_record.users.new.name") %>
-      <%= f.text_field :name, class: "form-control" %>
-
-      <%= f.label :email , t("active_record.users.new.email") %>
-      <%= f.email_field :email, class: "form-control" %>
-
-      <%= f.label :password , t("active_record.users.new.password") %>
-      <%= f.password_field :password, class: "form-control" %>
-
-      <%= f.label :password_confirmation, t("active_record.users.new.confirmation") %>
-      <%= f.password_field :password_confirmation, class: "form-control" %>
-
-      <%= f.submit t("active_record.users.new.create_account"), class: "btn btn-primary" %>
+    <% content_for :button_text do %>
+      <%= t(".create_account") %>
     <% end %>
+    <%= render "form" %>
   </div>
 </div>
