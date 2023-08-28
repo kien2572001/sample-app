@@ -72,6 +72,7 @@ en:
       password: "Password"
       new_user: "New user?"
       signup_now: "Sign up now!"
+      forgot_password: "Forgot password?"
       remember_me_on_this_computer: "Remember me on this computer"
     create:
       invalid_email_password_combination: "Invalid email/password combination"
@@ -100,3 +101,27 @@ en:
     edit:
       invalid_activation_link: "Invalid activation link"
       account_activated: "Account activated!"
+
+  password_resets:
+    create:
+      password_reset_email_sent: "Email sent with password reset instructions"
+      email_not_found: "Email not found"
+    update:
+      password_can_not_be_blank: "Password can't be blank"
+      reset_password_successfully: "Password has been reset successfully"
+    edit: 
+      title: "Reset password"
+      reset_password: "Reset password"
+      new_password: "New password"
+      confirm_password: "Confirm password"
+      update_password: "Update password"
+    new:
+      title: "Forgot password"
+      forgot_password: "Forgot password"
+      email: "Email"
+      submit: "Submit"
+    common:
+      user_not_found: "User not found"
+      user_is_not_activated: "User is not activated"
+      password_reset_expired: "Password reset has expired"
+
