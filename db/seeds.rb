@@ -6,23 +6,43 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 # Create a main sample user.
-User.create!(name:  "kien",
-              email: "kien@gmail.com",
-              password:              "123456",
-              password_confirmation: "123456",
-              admin: true,
-              activated: true,
-              activated_at: Time.zone.now)
+# User.create!(name:  "kien",
+#               email: "kien@gmail.com",
+#               password:              "123456",
+#               password_confirmation: "123456",
+#               admin: true,
+#               activated: true,
+#               activated_at: Time.zone.now)
 
-# Generate a bunch of additional users.
-99.times do |n|
-  name = Faker::Name.name
+# # Generate a bunch of additional users.
+# 99.times do |n|
+#   name = Faker::Name.name
+#   email = "example-#{n+1}@railstutorial.org"
+#   password = "123456"
+#   User.create!(name:  name,
+#                 email: email,
+#                 password:              password,
+#                 password_confirmation: password,
+#                 activated: true,
+#                 activated_at: Time.zone.now)
+# end
+
+
+# # Generate microposts for a subset of users.
+30.times do |n|
+  name = "User #{n+1}"
   email = "example-#{n+1}@railstutorial.org"
   password = "123456"
   User.create!(name:  name,
                 email: email,
-                password:              password,
+                password: password,
                 password_confirmation: password,
                 activated: true,
                 activated_at: Time.zone.now)
+end
+
+users = User.order(:created_at).take(6)
+50.times do |n|
+  content = "Noi dung #{n+1}"
+  users.each { |user| user.microposts.create!(content: content) }
 end
