@@ -7,6 +7,10 @@ en:
     new:
       signup_title: "Sign up"
       create_account: "Create my account"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      confirmation: "Confirmation"
     index:
       title: "All users"
       all_users: "All users"
@@ -32,6 +36,8 @@ en:
     destroy:
       user_deleted_successfully: "User deleted successfully"
       user_deleted_failed: "User deleted failed"
+    create:
+      check_your_email: "Please check your email to activate your account."
     common:
       user_not_found: "User not found"
       wrong_user: "You are not authorized to edit this user"
@@ -83,3 +89,15 @@ en:
       signup: "Sign up"
       profile: "Profile"
       account: "Account"
+  
+  user_mailer:
+    account_activation:
+      app_name: "Sample App"
+      hello: "Hi"
+      click_link: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate"
+  
+  account_activations:
+    edit:
+      invalid_activation_link: "Invalid activation link"
+      account_activated: "Account activated!"
