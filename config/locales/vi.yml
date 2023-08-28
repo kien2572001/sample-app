@@ -73,6 +73,7 @@ vi:
       password: "Mật khẩu"
       new_user: "Người dùng mới?"
       signup_now: "Đăng ký ngay!"
+      forgot_password: "Quên mật khẩu?"
       remember_me_on_this_computer: "Ghi nhớ tài khoản trên máy tính này"
     create:
       invalid_email_password_combination: "Email/mật khẩu không hợp lệ"
@@ -97,3 +98,27 @@ vi:
       hello: "Xin chào"
       click_link: "Chào mừng bạn đến với ứng dụng mẫu! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
       activate: "Kích hoạt tài khoản"
+  
+  account_activations:
+    edit:
+    invalid_activation_link: "Liên kết kích hoạt không hợp lệ"
+    account_activated: "Tài khoản đã được kích hoạt!"
+
+  password_resets:
+    create:
+      password_reset_email_sent: "Email đã được gửi với hướng dẫn đặt lại mật khẩu"
+      email_not_found: "Email không tồn tại"
+    update:
+      password_can_not_be_blank: "Mật khẩu không được để trống"
+      reset_password_successfully: "Mật khẩu đã được đặt lại thành công"
+    edit: 
+      title: "Đặt lại mật khẩu"
+      reset_password: "Đặt lại mật khẩu"
+      new_password: "Mật khẩu mới"
+      confirm_password: "Xác nhận mật khẩu"
+      update_password: "Cập nhật mật khẩu"
+    common:
+      user_not_found: "Người dùng không tồn tại"
+      user_is_not_activated: "Người dùng chưa được kích hoạt"
+      password_reset_expired: "Quá trình đặt lại mật khẩu đã hết hạn"
+
