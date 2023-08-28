@@ -3,9 +3,43 @@ vi:
     ja: "Tiếng Nhật"
     vi: "Tiếng Việt"
     en: "Tiếng Anh"
+
+  users:
+    new:
+      signup_title: "Đăng ký"
+      create_account: "Tạo tài khoản"
+    index:
+      title: "Tất cả người dùng"
+      all_users: "Tất cả người dùng"
+    edit:
+      edit_user: "Chỉnh sửa người dùng"
+      update_profile: "Cập nhật hồ sơ của bạn"
+      save_changes: "Lưu thay đổi"
+      change: "Thay đổi"
+    _user:
+      delete: "Xóa"
+      are_you_sure: "Bạn có chắc không?"
+    form:
+      name: "Tên"
+      email: "Email"
+      password: "Mật khẩu"
+      confirmation: "Xác nhận mật khẩu"
+    show:
+      user_not_found: "Không tìm thấy người dùng"
+    create:
+      user_created_successfully: "Người dùng đã được tạo thành công"
+    update:
+      user_updated_successfully: "Người dùng đã được cập nhật thành công"
+    destroy:
+      user_deleted_successfully: "Người dùng đã được xóa thành công"
+      user_deleted_failed: "Xóa người dùng không thành công"
+    common:
+      user_not_found: "Không tìm thấy người dùng"
+      wrong_user: "Bạn không được phép chỉnh sửa người dùng này"
+      please_log_in: "Vui lòng đăng nhập"
+      not_admin: "Bạn không được phép thực hiện hành động này"
+
   static_pages:
-    app_name: "Ứng dụng mẫu"
-    base_title: "Ứng dụng mẫu Ruby on Rails Tutorial"
     home:
       title: "Trang chủ"
       description: <p>
@@ -20,69 +54,10 @@ vi:
         Để nhận trợ giúp về ứng dụng mẫu này, hãy xem
         <a href="http://www.railstutorial.org/book">Cuốn sách Rails Tutorial</a>.
         </p>
-  products:
-    index:
-      title: "Sản phẩm"
-      description: "Trang sản phẩm"
-    show:
-      title: "Sản phẩm"
-      description: "Trang sản phẩm"
-      editThisProduct: "Chỉnh sửa sản phẩm này"
-      backToProducts: "Quay lại danh sách sản phẩm"
-      destroyThisProduct: "Xóa sản phẩm này"
-    new:
-      title: "Thêm sản phẩm mới"
-      description: "Trang thêm sản phẩm mới"
-    edit:
-      title: "Chỉnh sửa sản phẩm"
-      description: "Trang chỉnh sửa sản phẩm"
-      showThisProduct: "Xem sản phẩm này"
-      backToProducts: "Quay lại danh sách sản phẩm"
-    other:
-      show: "Xem"
-      edit: "Chỉnh sửa"
-      destroy: "Xóa"
-      new: "Sản phẩm mới"
-      are_you_sure: "Bạn có chắc không?"
-      no_products: "Không tìm thấy sản phẩm nào"
-    attributes:
-      name: "Tên"
-      price: "Giá"
-      description: "Mô tả"
-      image_url: "Đường dẫn ảnh"
-      show: "Xem"
-      edit: "Chỉnh sửa"
-      destroy: "Xóa"
-      new: "Sản phẩm mới"
-      are_you_sure: "Bạn có chắc không?"
 
-  layouts:
-    home: "Trang chủ"
-    help: "Trợ giúp"
-    products: "Sản phẩm"
-    login: "Đăng nhập"
-    users: "Người dùng"
-    settings: "Cài đặt"
-    logout: "Đăng xuất"
-    signup: "Đăng ký"
-    profile: "Hồ sơ"
-    account: "Tài khoản"
-
-  active_record:
-    users:
-      new:
-        signup: "Đăng ký"
-        signup_title: "Đăng ký"
-        create_account: "Tạo tài khoản của tôi"
-        confirmation: "Xác nhận"
-        name: "Tên"
-        email: "Email"
-        password: "Mật khẩu"
-      error_messages:
-        form_contains: "Biểu mẫu chứa"
-      flash:
-        user_not_found: "Không tìm thấy người dùng"
-        user_created_successfully: "Người dùng đã được tạo thành công"
+  shared:
+    _error_messages:
+      form_contains: "Biểu mẫu chứa"
 
   sessions:
     new:
@@ -93,6 +68,18 @@ vi:
       new_user: "Người dùng mới?"
       signup_now: "Đăng ký ngay!"
       remember_me_on_this_computer: "Ghi nhớ tài khoản trên máy tính này"
-    flash:
+    create:
       invalid_email_password_combination: "Email/mật khẩu không hợp lệ"
 
+  layouts:
+    header:
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      products: "Sản phẩm"
+      login: "Đăng nhập"
+      users: "Người dùng"
+      settings: "Cài đặt"
+      logout: "Đăng xuất"
+      signup: "Đăng ký"
+      profile: "Hồ sơ"
+      account: "Tài khoản"
