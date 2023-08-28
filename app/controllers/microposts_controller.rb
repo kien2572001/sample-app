@@ -9,7 +9,7 @@ class MicropostsController < ApplicationController
       redirect_to root_url
 
     else
-      @pagy, @feed_items = pagy current_user.feed, items: 10
+      @pagy, @feed_items = pagy current_user.feed.newest, items: 10
       render 'static_pages/home', status: :unprocessable_entity
     end
   end
@@ -27,7 +27,7 @@ class MicropostsController < ApplicationController
   private
 
   def micropost_params
-    params.require(:micropost).permit(:content)
+    params.require(:micropost).permit(:content, :image)
   end
 
   def correct_user
