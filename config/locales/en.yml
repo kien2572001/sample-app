@@ -29,6 +29,7 @@ en:
       confirmation: "Confirmation"
     show:
       user_not_found: "User not found"
+      microposts: "Microposts"
     create:
       user_created_successfully: "User created successfully"
     update:
@@ -47,11 +48,14 @@ en:
   static_pages:
     home:
       title: "Home"
+      welcome_to: "Welcome to the Sample App"
       description: <p>
         This is the home page for the   
         <a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a>
         sample application.
         </p>
+      sign_up_now: "Sign up now!"
+      micropost_feed: "Micropost Feed"
     help:
       title: "Help"
       description: <p>
@@ -64,6 +68,11 @@ en:
   shared:
     _error_messages:
       form_contains: "The form contains"
+    micropost_form:
+      compose_new_micropost: "Compose new micropost..."
+      post: "Post"
+    user_info:
+      view_my_profile: "View my profile"
   
   sessions:
     new:
@@ -126,3 +135,20 @@ en:
       user_is_not_activated: "User is not activated"
       password_reset_expired: "Password reset has expired"
 
+  microposts:
+    create:
+      micropost_created_successfully: "Micropost created successfully"
+      micropost_created_failed: "Micropost created failed"
+    destroy:
+      micropost_deleted_successfully: "Micropost deleted successfully"
+      micropost_deleted_failed: "Micropost deleted failed"
+    common:
+      cant_delete_micropost: "You can't delete this micropost"
+    micropost:
+      sure: "Are you sure?"
+      posted: "Posted"
+      delete: "Delete"
+    validate:
+      image_valid_format: "Image must be a valid format"
+      less_than_5MB: "Image must be less than 5MB"
+      chose_other_image: "Maximum file size is 5MB. Please choose a smaller file."

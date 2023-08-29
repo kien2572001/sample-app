@@ -30,6 +30,7 @@ vi:
       confirmation: "Xác nhận mật khẩu"
     show:
       user_not_found: "Không tìm thấy người dùng"
+      microposts: "Bài viết"
     create:
       user_created_successfully: "Người dùng đã được tạo thành công"
     update:
@@ -48,12 +49,15 @@ vi:
   static_pages:
     home:
       title: "Trang chủ"
+      welcome_to: "Chào mừng bạn đến với ứng dụng mẫu"
       description: <p>
         Đây là trang chủ của ứng dụng mẫu
         <a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a>.
         </p>
+      sign_up_now: "Đăng ký ngay!"
+      micropost_feed: "Bảng tin Micropost"
     help:
-      title: "Trợ giúp"
+      title: "Trợ giúp"    
       description: <p>
         Để nhận trợ giúp về Ruby on Rails Tutorial, hãy truy cập trang
         <a href="http://www.railstutorial.org/help">Trang trợ giúp Rails Tutorial</a>.
@@ -64,6 +68,11 @@ vi:
   shared:
     _error_messages:
       form_contains: "Biểu mẫu chứa"
+    micropost_form:
+      compose_new_micropost: "Viết bài viết mới"
+      post: "Đăng"
+    user_info:
+      view_my_profile: "Xem hồ sơ của tôi"
 
   sessions:
     new:
@@ -122,3 +131,20 @@ vi:
       user_is_not_activated: "Người dùng chưa được kích hoạt"
       password_reset_expired: "Quá trình đặt lại mật khẩu đã hết hạn"
 
+  microposts:
+    create:
+      micropost_created_successfully: "Tạo micropost thành công"
+      micropost_created_failed: "Tạo micropost thất bại"
+    destroy:
+      micropost_deleted_successfully: "Xóa micropost thành công"
+      micropost_deleted_failed: "Xóa micropost thất bại"
+    common:
+      cant_delete_micropost: "Bạn không thể xóa micropost này"
+    micropost:
+      sure: "Bạn có chắc không?"
+      posted: "đã đăng"
+      delete: "Xóa"
+    validate:
+      image_valid_format:  "Hình ảnh phải có định dạng png, jpg, jpeg hoặc gif"
+      less_than_5MB: "Hình ảnh phải nhỏ hơn 5MB"
+      chose_other_image: "Vui lòng chọn hình ảnh khác"

@@ -2,6 +2,8 @@ class User < ApplicationRecord
   before_save :downcase_email
   before_create :create_activation_digest
 
+  has_many :microposts, dependent: :destroy
+
   validates :name, presence: true,
     length: {maximum: Settings.validates.name.length.max}
   validates :email, presence: true,
@@ -15,6 +17,10 @@ class User < ApplicationRecord
   has_secure_password
 
   attr_accessor :remember_token, :activation_token, :reset_token
+
+  def feed
+    microposts.newest
+  end
 
   # Activates an account.
   def activate
