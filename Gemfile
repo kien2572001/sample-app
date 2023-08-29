@@ -43,10 +43,14 @@ gem "tzinfo-data", platforms: %i(mingw mswin x64_mingw jruby)
 gem "bootsnap", require: false
 gem "bootstrap-sass", "~> 3.4.1"
 
+gem "active_storage_validations", "0.8.2"
 gem "config"
 gem "faker", "2.21.0"
 gem "figaro"
 gem "i18n"
+gem "i18n-js"
+gem "image_processing", "1.12.2"
+gem "mini_magick", "4.9.5"
 gem "pagy"
 
 # Use Sass to process CSS

@@ -5,10 +5,13 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def index
-    @pagy, @users = pagy User.all, items: Settings.configs.pagy.item_per_page
+    @pagy, @users = pagy User.all, items: Settings.configs.pagy.user_per_page
   end
 
-  def show; end
+  def show
+    @pagy, @microposts = pagy @user.microposts,
+                              items: Settings.configs.pagy.micropost_per_page
+  end
 
   def new
     @user = User.new
@@ -72,14 +75,5 @@ class UsersController < ApplicationController
 
     flash[:danger] = t("users.common.wrong_user")
     redirect_to root_path
-  end
-
-  # Confirms a logged-in user.
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t("users.common.please_log_in")
-    redirect_to login_url, status: :see_other
   end
 end
