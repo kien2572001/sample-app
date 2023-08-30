@@ -5,13 +5,21 @@ class Micropost < ApplicationRecord
   end
 
   validates :content, presence: true,
-length: {maximum: Settings.validates.micropost.content.max_length}
+                      length: {
+                        maximum: Settings.validates.micropost.content.max_length
+                      }
   validates :image,
-            content_type: {in: Settings.configs.image.accept_type.split(", ").map(&:strip),
-                           message: I18n.t("microposts.validate.image_valid_format")},
-                              size: {less_than: 5.megabytes,
-                                     message: I18n.t("microposts.validate.less_than_5MB")}
-  scope :newest, ->{order created_at: :desc}
+            content_type: {
+              in: Settings.configs.image.accept_type.split(", ").map(&:strip),
+              message: I18n.t("microposts.validate.image_valid_format")
+            },
+            size: {
+              less_than: 5.megabytes,
+              message: I18n.t("microposts.validate.less_than_5MB")
+            }
+
+  scope :newest, ->{order(created_at: :desc)}
+  scope :related_posts, ->(user_id){where(user_id:)}
 
   delegate :name, to: :user, prefix: true
 end

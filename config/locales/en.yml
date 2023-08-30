@@ -39,6 +39,13 @@ en:
       user_deleted_failed: "User deleted failed"
     create:
       check_your_email: "Please check your email to activate your account."
+    following:
+      title: "Following"
+    follow:
+      follow: "Follow"
+    show_follow:
+      microposts: "Microposts"
+      view_profile: "View profile"
     common:
       user_not_found: "User not found"
       wrong_user: "You are not authorized to edit this user"
@@ -73,6 +80,10 @@ en:
       post: "Post"
     user_info:
       view_my_profile: "View my profile"
+    stats:
+      following: "following"
+      followers: "followers"
+      microposts: "microposts"
   
   sessions:
     new:
@@ -152,3 +163,18 @@ en:
       image_valid_format: "Image must be a valid format"
       less_than_5MB: "Image must be less than 5MB"
       chose_other_image: "Maximum file size is 5MB. Please choose a smaller file."
+
+  relationships:
+    common:
+      user_not_found: "User not found"
+      relationship_not_found: "Relationship not found"
+
+  followers:
+    index:
+      title: "Followers"
+      followers: "Followers"
+  
+  followings:
+    index:
+      title: "Following"
+      following: "Following"

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'followers/index'
+  get 'followings/index'
   constraints(locale: /en|vi/) do
     # Define your routes here
     # root define
@@ -12,6 +14,16 @@ Rails.application.routes.draw do
     resources :account_activations, only: :edit
     resources :password_resets, only: %i(new create edit update)
     resources :microposts, only: %i(create destroy)
+
+    resources :users do
+      member do
+        get :followings , to: "followings#index"
+        get :followers, to: "followers#index"
+      end
+    end
+
+
+    resources :relationships, only: %i(create destroy)
 
     get "/login", to: "sessions#new"
     post "/login", to: "sessions#create"
