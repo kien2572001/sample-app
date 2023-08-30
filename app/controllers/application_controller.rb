@@ -20,4 +20,12 @@ class ApplicationController < ActionController::Base
     flash[:danger] = t("users.common.please_log_in")
     redirect_to login_url, status: :see_other
   end
+
+  def find_user
+    @user = User.find_by id: params[:id]
+    return if @user
+
+    flash[:warning] = t("users.common.user_not_found")
+    redirect_to root_path
+  end
 end
